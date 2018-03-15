@@ -15,7 +15,7 @@ A quick Javascript Implementation of Game of Life, a cellular automaton formulat
 
 Cells that persist from one generation to another (Rule 2) will be colored by a gradient from green (youngest), to yellow, to red (oldest).
 
-![cell image](https://i.imgur.com/rzVmSGv.png)
+![cell gif](https://i.imgur.com/9W9mVoF.gifv)
 
 
 ## Installation

@@ -9,9 +9,14 @@ A quick Javascript Implementation of Game of Life, a cellular automaton formulat
 3. A cell with with more than three live neighbors dies (overpopulation)
 4. A dead cell with exactly three live neighbors becomes a live cell (reproduction)
 
+[Source](https://en.wikipedia.org/wiki/John_Horton_Conway)
+
 ## Visuals
 
 Cells that persist from one generation to another (Rule 2) will be colored by a gradient from green (youngest), to yellow, to red (oldest).
+
+![cell image](https://i.imgur.com/rzVmSGv.png)
+
 
 ## Installation
 1. Download or clone the repository

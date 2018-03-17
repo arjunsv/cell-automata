@@ -16,6 +16,7 @@ var rows;
 var cellSize = 5;
 var generation = 0;
 var population = 0;
+
 function setup() {
 	frameRate(60);
 	createCanvas(screen.width/2, screen.height/2);
@@ -56,8 +57,7 @@ function countAdjacent(grid, x, y) {
 	return sum;
 }
 
-function draw() {
-	background(25);
+function renderGrid(grid) {
 	for (var i=0; i < cols; i++) {
 		for (let j = 0; j < rows; j++){
 			let x = i * cellSize;
@@ -70,7 +70,9 @@ function draw() {
 			}
 		}
 	}
+}
 
+function updateGrid(grid) {
 	let next = initArray(cols, rows);
 	for (let i=0; i < cols; i++) {
 		for (let j =0; j < rows; j++) {
@@ -96,8 +98,19 @@ function draw() {
 	}
 	grid = next;
 	generation += 1;
+	return grid
+}
+
+function draw() {
+	background(25);
+	grid = updateGrid(grid);
+	renderGrid(grid);
+}
+
+function updateTickers() {	
 	var genTicker = document.getElementById("genTicker");
 	var popTicker = document.getElementById("popTicker")
 	genTicker.innerHTML = "Generation: " + generation;
 	popTicker.innerHTML = "Population: " + population;
 }
+

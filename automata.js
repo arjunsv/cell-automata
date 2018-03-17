@@ -3,7 +3,6 @@ class Cell {
 		this.x = x;
 		this.y = y;
 		this.alive = alive;
-		this.age = 0;
 		this.R = rgb[0];
 		this.G = rgb[1];
 		this.B = rgb[2];

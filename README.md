@@ -4,7 +4,7 @@ A quick Javascript Implementation of Game of Life, a cellular automaton formulat
 
 
 ## Conway's Rules
-1. A live cell with few than two live neighbors dies (underpopulation)
+1. A live cell with fewer than two live neighbors dies (underpopulation)
 2. A live cell with two or three neighbors lives to the next generation (self renewal)
 3. A cell with with more than three live neighbors dies (overpopulation)
 4. A dead cell with exactly three live neighbors becomes a live cell (reproduction)
